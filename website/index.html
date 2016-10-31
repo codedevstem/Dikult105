@@ -4,20 +4,26 @@
     <meta charset="utf-8">
     <title>Index page</title>
     <link rel="stylesheet" href="css/master.css">
+    <script src="scripts/main.js"></script>
   </head>
   <body>
     <header>
-      <nav id="mainNav">
-
-      </nav>
+      <div class="dropdown">
+        <a onclick="myFunction()" class="dropbtn">&#9776;</a>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </div>
     </header>
     <main>
-      <nav id="personsNav">
-        <li><a href="#" class="arrows" onclick="">&#10094;</a></li>
-        <li><a href="#"><img id="picLinkOne" class="picLinks" src="images/testOne.png" alt="testPictureOne" /></a></li>
-        <li id="picLinkTwo"><a href="#" ><img class="picLinks" src="images/testTwo.png" alt="testPictureTwo" /></a></li>
-        <li id="picLinkThree"><a href="#" ><img class="picLinks" src="images/testThree.png" alt="testPictureThree" /></a></li>
-        <li><a href="#" class="arrows" onclick="">&#10095;</a></li>
+      <nav id="personNav">
+        <li><a href="#"><img class="picLinks" src="images/testOne.png" alt="testPictureOne" /></a></li>
+        <li><a href="#"><img class="picLinks" src="images/testTwo.png" alt="testPictureTwo" /></a></li>
+        <li><a href="#"><img class="picLinks" src="images/testThree.png" alt="testPictureThree" /></a></li>
+        <li><a href="#"><img class="picLinks" src="images/testFour.png" alt="testPictureFour" /></a></li>
+        <li><a href="#"><img class="picLinks" src="images/testFive.png" alt="testPictureFive" /></a></li>
       </nav>
     </main>
     <footer></footer>
