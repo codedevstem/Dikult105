@@ -1,0 +1,61 @@
+/*Author: Candidate Number: 137*/
+/* VALIDATED CSS3 */
+ html {
+   width: 100%;
+ }
+ body * {
+   font-family: 'Roboto Slab', serif;
+ }
+ body {
+   width: 100%;
+   background:url(../images/polyfaint.png) fixed no-repeat bottom right;
+   background-size: cover;
+   margin-left: auto;
+   margin-right: auto;
+ }
+ header {
+   padding-top: 5%;
+   padding-left: 15%;
+   padding-bottom: 3%;
+ }
+ header h1{
+   font-size: 300%;
+ }
+ main {
+   padding-left: 20%;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: flex-start;
+   max-width: 70%;
+ }
+ section {
+   padding: 2em;
+   float: left;
+   display: inline-block;
+ }
+ img {
+   max-width: 250px;
+ }
+ h2 {
+   padding-bottom: 0;
+ }
+ span {
+   margin: 0;
+   padding: 0;
+ }
+
+ @media screen and (max-width: 1200px) {
+   main {
+     max-width: 500px;
+     padding-left: 30%;
+
+   }
+ }
+ @media screen and (max-width: 800px) {
+   main {
+     padding-left: 15%;
+   }
+}
+#backArrow a {
+  color: black;
+}

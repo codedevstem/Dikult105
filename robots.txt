@@ -1,0 +1,7 @@
+# Author: Candidate Number: 137
+
+# Blocks all robot access
+User-agent: *
+Disallow: /
+
+# End of File

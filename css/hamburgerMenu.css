@@ -1,0 +1,150 @@
+/*Author: Candidate Number: 137
+  A reusable hamburger menu
+  that I seperated because
+  it was used for many webpages.
+*/
+/* VALIDATED CSS3 */
+#menuButtonNav {
+  background-color:rgba(255,0,0,0);
+  position: fixed;
+  right: 10px;
+  top: 5px;
+  z-index: 100;
+}
+#menuButtonNav * {
+  font-family: 'Roboto Slab', serif;
+}
+
+#menuButtonNav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #fff;
+  z-index: 100;
+
+}
+
+#menuButtonNav li a {
+  display: block;
+  padding: 12px 12px;
+  border-right: 1px solid #000;
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  font-family: 'Roboto Slab', serif;
+  z-index: 100;
+}
+.bottomElement {
+  border-bottom: 2px solid #000;
+}
+
+#menuButtonNav li a:hover {
+  background-color: #f4f4f4;
+}
+
+#menuButtonNav .logo {
+  display: block;
+  float: left;
+  font-size: 2em;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+#menuButtonNav .menu {
+  clear: both;
+  max-height: 0;
+  min-width: 100px;
+  transition: max-height .2s ease-out;
+}
+#menuButtonNav .menuIcon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+}
+
+#menuButtonNav .menuIcon .navIcon {
+  background: #fff;
+  display: block;
+  height: 5px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 30px;
+}
+
+#menuButtonNav .menuIcon .navIcon:before,
+#menuButtonNav .menuIcon .navIcon:after {
+  background: #fff;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+#menuButtonNav .menuIcon .navIcon:before {
+  top: 10px;
+}
+
+#menuButtonNav .menuIcon .navIcon:after {
+  top: -10px;
+}
+#menuButtonNav .menuButton {
+  display: none;
+}
+
+#menuButtonNav .menuButton:checked ~ .menu {
+  max-height: 300px;
+}
+
+#menuButtonNav .menuButton:checked ~ .menuIcon .navIcon {
+  background: transparent;
+}
+
+#menuButtonNav .menuButton:checked ~ .menuIcon .navIcon:before {
+  transform: rotate(-45deg);
+}
+
+#menuButtonNav .menuButton:checked ~ .menuIcon .navIcon:after {
+  transform: rotate(45deg);
+}
+
+#menuButtonNav .menuButton:checked ~ .menuIcon:not(.steps) .navIcon:before,
+#menuButtonNav .menuButton:checked ~ .menuIcon:not(.steps) .navIcon:after {
+  top: 0;
+}
+/*For Screenreaders*/
+.screenReaderInfo {
+  opacity: 0;
+  top: -100;
+  max-width: 0px;
+  max-height: 0px;
+
+}
+
+@media (max-width: 1200px){
+  #menuButtonNav {
+    top: 20px;
+  }
+  #menuButtonNav .menu {
+    min-width: 200px;
+  }
+  #menuButtonNav li a {
+    font-size: 22px;
+  }
+  #menuButtonNav .menuIcon .navIcon {
+    width: 60px;
+    height: 7px;
+  }
+  #menuButtonNav .menuIcon .navIcon:before {
+    top: 20px;
+  }
+
+  #menuButtonNav .menuIcon .navIcon:after {
+    top: -20px;
+  }
+
+}
