@@ -1,4 +1,4 @@
 # Dikult105
-Group project for Kristian, Bella and Riccardo
+Project written by Krstian Os
 
-- In this project we will create a website to honor/display important web designers.
+- In this project I creates a website to display important web designers.
